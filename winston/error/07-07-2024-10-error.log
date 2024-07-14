@@ -1,0 +1,3 @@
+Sun Jul 07 2024 10:34:24 [EDUCOIN] error: 🚨 globalErrorHandler ~~  E11000 duplicate key error collection: educoin.users index: email_1 dup key: { email: "fahim@gmail.com" }
+Sun Jul 07 2024 10:37:6 [EDUCOIN] error: 🚨 globalErrorHandler ~~  E11000 duplicate key error collection: educoin.users index: email_1 dup key: { email: "fahim@gmail.com" }
+Sun Jul 07 2024 10:37:30 [EDUCOIN] error: 🚨 globalErrorHandler ~~  E11000 duplicate key error collection: educoin.users index: email_1 dup key: { email: "fahim@gmail.com" }

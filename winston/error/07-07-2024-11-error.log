@@ -1,0 +1,62 @@
+Sun Jul 07 2024 11:8:37 [EDUCOIN] error: 🚨 globalErrorHandler ~~  [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "email"
+    ],
+    "message": "Email is required"
+  }
+]
+Sun Jul 07 2024 11:10:24 [EDUCOIN] error: 🚨 globalErrorHandler ~~  [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "email"
+    ],
+    "message": "Email is required"
+  }
+]
+Sun Jul 07 2024 11:14:48 [EDUCOIN] error: 🚨 globalErrorHandler ~~  [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "email"
+    ],
+    "message": "Email is required"
+  }
+]
+Sun Jul 07 2024 11:17:4 [EDUCOIN] error: 🚨 globalErrorHandler ~~  [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "email"
+    ],
+    "message": "Email is required"
+  }
+]
+Sun Jul 07 2024 11:17:14 [EDUCOIN] error: 🚨 globalErrorHandler ~~  User validation failed: email: Path `email` is required.
+Sun Jul 07 2024 11:31:6 [EDUCOIN] error: 🚨 globalErrorHandler ~~  [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "email"
+    ],
+    "message": "Email is required"
+  }
+]
+Sun Jul 07 2024 11:31:17 [EDUCOIN] error: 🚨 globalErrorHandler ~~  Email already exist!

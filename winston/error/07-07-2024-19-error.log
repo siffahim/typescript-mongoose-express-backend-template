@@ -1,0 +1,1 @@
+Sun Jul 07 2024 19:23:16 [EDUCOIN] error: 🚨 globalErrorHandler ~~  User validation failed: password: Path `password` (`12345`) is shorter than the minimum allowed length (8).

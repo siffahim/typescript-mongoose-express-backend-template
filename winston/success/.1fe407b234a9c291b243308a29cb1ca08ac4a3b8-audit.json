@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 1
+    },
+    "auditLog": "D:\\Fahim\\Bdcalling\\Backend\\educoin-backend\\winston\\success\\.1fe407b234a9c291b243308a29cb1ca08ac4a3b8-audit.json",
+    "files": [
+        {
+            "date": 1720326853555,
+            "name": "D:\\Fahim\\Bdcalling\\Backend\\educoin-backend\\winston\\success\\07-07-2024-10-success.log",
+            "hash": "4d14d5ac985c80ef58b23512ef1e16e47c3f7be43e7156593bb4558a3b09e37a"
+        },
+        {
+            "date": 1720329022303,
+            "name": "D:\\Fahim\\Bdcalling\\Backend\\educoin-backend\\winston\\success\\07-07-2024-11-success.log",
+            "hash": "4825cc3d495082c8f082af3ac19904bb48a95e988db4f0bc6d004f019436e24e"
+        },
+        {
+            "date": 1720341159982,
+            "name": "D:\\Fahim\\Bdcalling\\Backend\\educoin-backend\\winston\\success\\07-07-2024-14-success.log",
+            "hash": "30e7b2cbe1146e7f27574fa3e70cd0276444d0efecfb4f047be8c397cb030797"
+        },
+        {
+            "date": 1720351064906,
+            "name": "D:\\Fahim\\Bdcalling\\Backend\\educoin-backend\\winston\\success\\07-07-2024-17-success.log",
+            "hash": "40f25658d33c2c9f77a5804a54f9b9f579cc324c144ddee3527d5dbe70f3eb57"
+        },
+        {
+            "date": 1720358559817,
+            "name": "D:\\Fahim\\Bdcalling\\Backend\\educoin-backend\\winston\\success\\07-07-2024-19-success.log",
+            "hash": "0b6e14a4a007d0b9b08b94711522e20186b66e300fe4ca3028cd6f3481cd0582"
+        }
+    ],
+    "hashType": "sha256"
+}

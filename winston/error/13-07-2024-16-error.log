@@ -1,0 +1,5 @@
+Sat Jul 13 2024 16:24:53 [SIMPLY-GOOD-FOOD] error: UnhandleException Detected ENOENT: no such file or directory, mkdir 'D:\Fahim\Bdcalling\Backend\simply-good-food-backend\uploads\images'
+Sat Jul 13 2024 16:26:29 [SIMPLY-GOOD-FOOD] error: UnhandleException Detected ENOENT: no such file or directory, mkdir 'D:\Fahim\Bdcalling\Backend\simply-good-food-backend\uploads\images'
+Sat Jul 13 2024 16:32:39 [SIMPLY-GOOD-FOOD] error: 🚨 globalErrorHandler ~~  ENOENT: no such file or directory, open 'D:\Fahim\Bdcalling\Backend\simply-good-food-backend\uploads\medias\riyaz-1720866759942.mp4'
+Sat Jul 13 2024 16:56:11 [SIMPLY-GOOD-FOOD] error: 🚨 globalErrorHandler ~~  You are not authorized
+Sat Jul 13 2024 16:56:43 [SIMPLY-GOOD-FOOD] error: 🚨 globalErrorHandler ~~  Cannot read properties of undefined (reading '0')
