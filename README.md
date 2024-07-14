@@ -29,6 +29,7 @@ This is a template project for backend development using Typescript, Node.js, Ex
 - Winston
 - Daily-winston-rotate-file
 - Morgen
+- Socket
 
 ## Getting Started
 
