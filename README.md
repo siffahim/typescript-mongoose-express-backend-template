@@ -1,12 +1,16 @@
 # Project Name
 
-A brief description of what your project does.
+This is a template project for backend development using Typescript, Node.js, Express, Mongoose, Bcrypt, JWT, NodeMailer, Multer, ESLint, and Prettier. The aim is to reduce setup time for new backend projects.
 
 ## Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- **Authentication API:** Complete authentication system using JWT for secure token-based authentication and bcrypt for password hashing.
+- **File Upload:** Implemented using Multer with efficient file handling and short-term storage.
+- **Data Validation:** Robust data validation using Zod and Mongoose schemas.
+- **Code Quality:** Ensured code readability and quality with ESLint and Prettier.
+- **Email Service:** Sending emails through NodeMailer.
+- **File Handling:** Efficient file deletion using `fs.unlink`.
+- **Environment Configuration:** Easy configuration using a `.env` file.
 
 ## Tech Stack
 
@@ -60,12 +64,25 @@ Ensure you have the following installed:
    In the root directory of the project, create a `.env` file and add the following variables. Adjust the values according to your setup.
 
    ```env
-   PORT=3000
-   MONGODB_URI=your_mongodb_uri
-   JWT_SECRET=your_jwt_secret
-   EMAIL_SERVICE=your_email_service
-   EMAIL_USERNAME=your_email_username
-   EMAIL_PASSWORD=your_email_password
+   # Basic
+   NODE_ENV=development
+   DATABASE_URL=mongodb://127.0.0.1:27017/project_name
+   IP_ADDRESS=192.0.0.0
+   PORT=5000
+
+   # Bcrypt
+   BCRYPT_SALT_ROUNDS=12
+
+   # JWT
+   JWT_SECRET=jwt_secret
+   JWT_EXPIRE_IN=1d
+
+   # Email
+   EMAIL_FROM=email@gmail.com
+   EMAIL_USER=email@gmail.com
+   EMAIL_PASS=mkqcfjeqloothyax
+   EMAIL_PORT=587
+   EMAIL_HOST=smtp.gmail.com
    ```
 
 4. **Run the project:**
@@ -79,7 +96,7 @@ Ensure you have the following installed:
    Using yarn:
 
    ```bash
-   yarn dev
+   yarn run dev
    ```
 
 ### Running the Tests
