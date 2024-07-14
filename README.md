@@ -11,6 +11,8 @@ This is a template project for backend development using Typescript, Node.js, Ex
 - **Email Service:** Sending emails through NodeMailer.
 - **File Handling:** Efficient file deletion using `fs.unlink`.
 - **Environment Configuration:** Easy configuration using a `.env` file.
+- **Logging:** Logging with Winston and file rotation using DailyRotateFile.
+- **API Request Logging:** Logging API requests using Morgan.
 
 ## Tech Stack
 
@@ -24,6 +26,9 @@ This is a template project for backend development using Typescript, Node.js, Ex
 - Multer
 - ESLint
 - Prettier
+- Winston
+- Daily-winston-rotate-file
+- Morgen
 
 ## Getting Started
 
