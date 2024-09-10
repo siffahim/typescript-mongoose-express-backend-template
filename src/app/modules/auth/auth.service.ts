@@ -215,7 +215,7 @@ const changePasswordToDB = async (
   //current password match
   if (
     currentPassword &&
-    (await !User.isMatchPassword(currentPassword, isExistUser.password))
+    !(await User.isMatchPassword(currentPassword, isExistUser.password))
   ) {
     throw new ApiError(StatusCodes.BAD_REQUEST, 'Password is incorrect');
   }
