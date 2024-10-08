@@ -63,28 +63,32 @@ const fileUploadHandler = () => {
       ) {
         cb(null, true);
       } else {
-        throw new ApiError(
-          StatusCodes.BAD_REQUEST,
-          'Only .jpeg, .png, .jpg file supported'
+        cb(
+          new ApiError(
+            StatusCodes.BAD_REQUEST,
+            'Only .jpeg, .png, .jpg file supported'
+          )
         );
       }
     } else if (file.fieldname === 'media') {
       if (file.mimetype === 'video/mp4' || file.mimetype === 'audio/mpeg') {
         cb(null, true);
       } else {
-        throw new ApiError(
-          StatusCodes.BAD_REQUEST,
-          'Only .mp4, .mp3, file supported'
+        cb(
+          new ApiError(
+            StatusCodes.BAD_REQUEST,
+            'Only .mp4, .mp3, file supported'
+          )
         );
       }
     } else if (file.fieldname === 'doc') {
       if (file.mimetype === 'application/pdf') {
         cb(null, true);
       } else {
-        throw new ApiError(StatusCodes.BAD_REQUEST, 'Only pdf supported');
+        cb(new ApiError(StatusCodes.BAD_REQUEST, 'Only pdf supported'));
       }
     } else {
-      throw new ApiError(StatusCodes.BAD_REQUEST, 'This file is not supported');
+      cb(new ApiError(StatusCodes.BAD_REQUEST, 'This file is not supported'));
     }
   };
 
