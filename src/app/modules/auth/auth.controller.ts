@@ -23,7 +23,7 @@ const loginUser = catchAsync(async (req: Request, res: Response) => {
   sendResponse(res, {
     success: true,
     statusCode: StatusCodes.OK,
-    message: 'User login successfully',
+    message: 'User logged in successfully.',
     data: result.createToken,
   });
 });
@@ -35,7 +35,8 @@ const forgetPassword = catchAsync(async (req: Request, res: Response) => {
   sendResponse(res, {
     success: true,
     statusCode: StatusCodes.OK,
-    message: 'Please check your email, we send a OTP!',
+    message:
+      'Please check your email. We have sent you a one-time passcode (OTP).',
     data: result,
   });
 });
@@ -48,7 +49,7 @@ const resetPassword = catchAsync(async (req: Request, res: Response) => {
   sendResponse(res, {
     success: true,
     statusCode: StatusCodes.OK,
-    message: 'Password reset successfully',
+    message: 'Your password has been successfully reset.',
     data: result,
   });
 });
@@ -61,7 +62,7 @@ const changePassword = catchAsync(async (req: Request, res: Response) => {
   sendResponse(res, {
     success: true,
     statusCode: StatusCodes.OK,
-    message: 'Password changed successfully',
+    message: 'Your password has been successfully changed',
   });
 });
 
