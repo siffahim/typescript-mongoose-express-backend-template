@@ -63,8 +63,8 @@ const updateProfileToDB = async (
   }
 
   //unlink file here
-  if (payload.profile) {
-    unlinkFile(isExistUser.profile);
+  if (payload.image) {
+    unlinkFile(isExistUser.image);
   }
 
   const updateDoc = await User.findOneAndUpdate({ _id: id }, payload, {

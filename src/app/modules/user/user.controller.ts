@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import { StatusCodes } from 'http-status-codes';
 import catchAsync from '../../../shared/catchAsync';
+import { getSingleFilePath } from '../../../shared/getFilePath';
 import sendResponse from '../../../shared/sendResponse';
 import { UserService } from './user.service';
 
@@ -34,13 +35,10 @@ const getUserProfile = catchAsync(async (req: Request, res: Response) => {
 const updateProfile = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     const user = req.user;
-    let profile;
-    if (req.files && 'image' in req.files && req.files.image[0]) {
-      profile = `/images/${req.files.image[0].filename}`;
-    }
+    let image = getSingleFilePath(req.files, 'image');
 
     const data = {
-      profile,
+      image,
       ...req.body,
     };
     const result = await UserService.updateProfileToDB(user, data);
