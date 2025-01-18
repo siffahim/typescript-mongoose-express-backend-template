@@ -1,4 +1,5 @@
 import { ErrorRequestHandler } from 'express';
+import { StatusCodes } from 'http-status-codes';
 import config from '../../config';
 import ApiError from '../../errors/ApiError';
 import handleValidationError from '../../errors/handleValidationError';
@@ -25,6 +26,18 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
+  } else if (error.name === 'TokenExpiredError') {
+    statusCode = StatusCodes.UNAUTHORIZED;
+    message = 'Session Expired';
+    errorMessages = error?.message
+      ? [
+          {
+            path: '',
+            message:
+              'Your session has expired. Please log in again to continue.',
+          },
+        ]
+      : [];
   } else if (error instanceof ApiError) {
     statusCode = error.statusCode;
     message = error.message;
